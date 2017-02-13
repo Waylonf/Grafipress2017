@@ -1,0 +1,33 @@
+.searchbox{
+	background-color: darken( $brand-primary, 10%);
+	text-align: center;
+	padding-bottom: $font-size-base*3;
+	//padding-top: $font-size-base*6;
+	.searchform{
+		input{
+			color: #ffffff;
+			border: none;		
+			@include rgba(background-color, black, 0.1, white);
+			font-size: $font-size-h1;
+			height: auto;
+			@include inputPlaceholder() {
+			    color: $brand-primary;
+			}
+			&:focus, &:hover{
+				box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+			}
+		}
+		.submit{
+			font-family: FontAwesome;
+		}
+		.assistive-text{
+			font-size: $font-size-h1;
+			color: #fff;
+			text-transform: uppercase;
+		}
+		.fields{
+			color: #fff;
+
+		}
+	}
+}

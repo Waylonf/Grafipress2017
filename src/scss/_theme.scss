@@ -1,0 +1,22 @@
+.section{
+	h2{
+		font-size: $font-size-h1;
+		text-transform: uppercase;
+	}
+	p{
+		padding-bottom: $font-size-base*2;
+	}
+	padding-top: $font-size-base*3;
+	wpadding-bottom: $font-size-base*3;
+}
+
+.primary-section{
+	background-color: $brand-primary;
+	color: #fff;
+	text-align: center;
+}
+
+.default-section{
+	background-color: #ffffff;
+	text-align: center;
+}

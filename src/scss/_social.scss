@@ -1,0 +1,24 @@
+.social{
+	background-color: #71BF4F;
+	h2{
+		color: #ffffff;
+	}
+	.fa{
+		color: #CC202F;
+	}
+	.list-social{
+		font-size: $font-size-h3;
+		.fa{
+			color: #fff;
+		}
+		.social-twitter a .fa-circle{
+			color: $twitter_color
+		}
+		.social-facebook a .fa-circle{
+			color: $facebook_color
+		}
+		.social-google-plus a .fa-circle{
+			color: $google_plus_color
+		}
+	}
+}

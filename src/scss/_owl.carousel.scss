@@ -1,0 +1,34 @@
+ .owl-carousel {
+    margin: 0;
+    .owl-nav [class*=owl-] {
+        background: rgba(0, 0, 0, 0.5);
+        color: rgba(255, 255, 255, 0.9);
+        width: 60px;
+        height: 100%;
+        border-radius: 0!important;
+        text-align: center;
+    }
+    .owl-nav [class*=owl-]:hover {
+        background: rgba(0, 0, 0, 0.9);
+        color: #FFF;
+    }
+    .owl-prev, .owl-next {
+        position: absolute;
+        top: 0px;
+        height: 100%;
+        margin: auto !important;
+        span{
+            position: absolute;
+            top: 50%;
+        }
+    }
+    .owl-prev {
+        left: 0;
+    }
+    .owl-next {
+        right: 0;
+    }
+    .owl-dots {
+        display: none !important;
+    }
+}

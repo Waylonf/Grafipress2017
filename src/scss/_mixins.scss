@@ -1,0 +1,101 @@
+/**
+ * Fix to sort out wpadmin bar overlapping nave menu when fixed to top
+ */
+@mixin admin-sticky-fix( $offset: 0 ) {
+    $narrow-offset: 46px;
+    $wide-offset: 32px;
+    @if $offset != 0 and type-of($offset) == 'number' {
+        $narrow-offset: $narrow-offset + $offset;
+        $wide-offset: $wide-offset + $offset;
+    }
+    .admin-bar & {
+    margin-top: $narrow-offset;
+        @media screen and (min-width: 783px) {
+            margin-top: $wide-offset;
+        }
+    }
+}
+
+/**
+ * Linear gradient mixin
+ * 
+ * @use .button{ @include linearGradient(#cccccc, #666666); }
+ */
+@mixin linearGradient($top, $bottom){
+    background: $top; /* Old browsers */
+    background: -moz-linear-gradient(top,  $top 0%, $bottom 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  $top 0%,$bottom 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  $top 0%,$bottom 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  $top 0%,$bottom 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  $top 0%,$bottom 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+/**
+ * Simple mixin to allow a fallback color based off rgba value,
+ * allows the option to set a parent background color incase the
+ * transparency is over a background other than white.
+ *
+ * @include rgba(background-color, black, 0.5, white);
+ */
+@mixin rgba($property, $background: black, $opacity: 0.75, $mix: white) {
+    #{$property}: mix($background, $mix, $opacity * 100%);
+    #{$property}: rgba($background, $opacity);
+}
+/**
+ * Style the placeholder attribute of input[type="text"] fields.
+ * This mixin can be applied globally or on specific text fields
+ * @example
+ * // all input and textareas
+ * @include inputPlaceholder() {
+ *     color: red;
+ *     font-weight: 300;
+ *     padding-top: 5px;
+ *  }
+ * // just textareas
+ * textarea {
+ *     @include inputPlaceholder() {
+ *         padding: 15px;
+ *     }
+ * }
+ */
+@mixin inputPlaceholder() {
+    $selector: '';
+    $prefixes: (
+        moz: "::-moz",
+        webkit: "::-webkit",
+        ie: ":-ms"
+    );
+    @each $prop, $value in $prefixes {
+        @if $prop != "moz" {
+            $selector: #{$value}-input-placeholder;
+        } @else {
+            $selector: #{$value}-placeholder;
+        }
+        @if & {
+            &#{$selector} {
+                @content;
+            }
+        } @else {
+            #{$selector} {
+                @content;
+            }
+        }
+    }
+    &::placeholder {
+      @content;
+    }
+}

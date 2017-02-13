@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Homepage</title>
+
+    <link rel="stylesheet" href="Homepage_files/bootstrap.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="Homepage_files/bootstrap-theme.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
+    <link href="Homepage_files/css.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="Homepage_files/font-awesome.css">
+
+    <link rel="stylesheet" href="Homepage_files/owl.css">
+    <link rel="stylesheet" href="Homepage_files/owl_002.css">
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+    *{
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+    }
+    body{
+        padding-top: 60px;
+    }
+     .owl-carousel {
+        margin: 0;
+    }
+
+    .owl-carousel .owl-nav [class*=owl-] {
+        background: rgba(0, 0, 0, 0.5);
+        color: rgba(255, 255, 255, 0.9);
+        width: 60px;
+        height: 100%;
+        border-radius: 0!important;
+        text-align: center;
+    }
+
+    .owl-carousel .owl-nav [class*=owl-]:hover {
+        background: rgba(0, 0, 0, 0.9);
+        color: #FFF;
+    }
+
+    .owl-carousel .owl-prev,
+    .owl-carousel .owl-next {
+        position: absolute;
+        top: 0px;
+        height: 100%;
+        margin: auto !important;
+    }
+    .owl-carousel .owl-prev span,
+    .owl-carousel .owl-next span{
+        position: absolute;
+        top: 50%;
+    }
+    .owl-carousel .owl-prev {
+        left: 0;
+    }
+
+    .owl-carousel .owl-next {
+        right: 0;
+    }
+
+    .owl-carousel .owl-dots {
+        display: none !important;
+    }
+
+    .topbar{
+        font-size: 20px;
+        font-weight: bold;
+        background-color: #71BF4F;
+        -webkit-transition: all .35s;
+        -moz-transition: all .35s;
+        transition: all .35s;
+        wpadding: 30px 0;
+    }
+    .topbar.affix{
+        wpadding: 15px 0;
+        background-color: #00A859;
+    }
+    .topbar a{
+        display: inline-block;
+        wpadding: 20px;
+        color: #fff;
+
+    }
+    .social{
+        padding: 30px;
+        background-color: #71BF4F;
+    }
+
+    footer{
+        padding: 30px;
+        background-color: #00A859;
+    }
+
+    /* TABS */
+    #tabs a.active{
+        -webkit-transition: all .35s;
+        -moz-transition: all .35s;
+        transition: all .35s;
+        background-color: #71BF4F;
+    }
+
+    #tabs a:hover{
+        -webkit-transition: all .35s;
+        -moz-transition: all .35s;
+        transition: all .35s;
+        background-color: #61AB50;
+    }
+    #tab-content #tab {
+        display: none;
+    }
+
+    #tab-content #tab{
+        wpadding: 30px;
+        
+        color: #fff;
+    }
+
+    .tab-container{
+       background-color: #71BF4F; 
+    }
+
+    .service-list ul li{
+        text-align: left;
+    }
+
+    #tab-content #tab.active {
+        display: block;
+    }
+
+    .bg-image {
+        width: 100%;
+        background-size: 100%;
+        background-image: url('img/city.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    .wbg-image img {
+        display: block;
+        width: 100%;
+        max-width: 1200px; /* corresponds to max height of 450px */
+        margin: 0 auto;
+    }
+    .logo, .logo img, .logo a{
+        padding: 0;
+    }
+
+    </style>
+</head>
+
+<body><div class="parallax-mirror" style="visibility: visible; z-index: -100; position: fixed; top: 515.3px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 449px; width: 1423px;"><img class="parallax-slider" src="Homepage_files/clouds.jpg" style="transform: translate3d(0px, 0px, 0px); position: absolute; top: -592.24px; left: 0px; height: 1044px; width: 1423px; max-width: none;"></div><div class="parallax-mirror" style="visibility: visible; z-index: -100; position: fixed; top: 60px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 395px; width: 1423px;"><img class="parallax-slider" src="Homepage_files/city.jpg" style="transform: translate3d(0px, 0px, 0px); position: absolute; top: -332px; left: 0px; height: 1011px; width: 1423px; max-width: none;"></div>
+    <div class="topbar navbar-fixed-top affix-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 logo"><a href=""><img class="img-responsive" src="Homepage_files/logo.png" alt=""></a> </div>
+                <div class="col-md-3"><a href="">+27 (0)13 656 6648</a> </div>
+                <div class="col-md-3"><a href="">17 Soar Street Witbank MP ZA</a></div>
+                <div class="col-md-3"><a href="">Send us a message</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-category" data-parallax="scroll" data-image-src="img/city.jpg">
+        <div class="container">
+            <h2>Your one stop print partner</h2>
+            <p>We can help you every step of the way. </p>
+            <div id="tabs" class="row">
+                <a class="single-category col-md-3 col-sm-6 active" href="#/">
+                    <img class="img-responsive" src="Homepage_files/print-service-icon.png" alt="">
+                    <h4>Print</h4>
+                </a>
+                <a class="single-category col-md-3 col-sm-6" href="#/">
+                    <img class="img-responsive" src="Homepage_files/wrap-service-icon.png" alt="">
+                    <h4>Wrap</h4>
+                </a>
+                <a class="single-category col-md-3 col-sm-6" href="#/">
+                    <img class="img-responsive" src="Homepage_files/sign-service-icon.png" alt="">
+                    <h4>Sign</h4>
+                </a>
+                <a class="single-category col-md-3 col-sm-6" href="#/">
+                    <img class="img-responsive" src="Homepage_files/design-service-icon.png" alt="">
+                    <h4>Design</h4>
+                </a>          
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-container container-fluid">
+            <div class="row">
+                <div id="tab-content" class="col-md-12">
+                    <div id="tab" class="active">
+                        <div class="container">
+                            <div class="row">
+                                <h1>Our printing services</h1>
+                                <h3>We have a wide range of cost 
+effective quality printing services. Our extensive experiance ensures 
+that we know which substrates will give you the best bang for your buck.</h3>
+                                <div class="col-md-3 service-list">
+                                    <h3>Indoor</h3>
+                                    <ul>
+                                        <li><a href="">Signs</a></li>
+                                        <li><a href="">Billboards</a></li>
+                                        <li><a href="">Banners</a></li>
+                                        <li><a href="">Correx</a></li>
+                                        <li><a href="">Harp Banners</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 service-list">
+                                    <h3>Outdoor</h3>
+                                    <ul>
+                                        <li><a href="">Signs</a></li>
+                                        <li><a href="">Billboards</a></li>
+                                        <li><a href="">Banners</a></li>
+                                        <li><a href="">Correx</a></li>
+                                        <li><a href="">Harp Banners</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 service-list">
+                                    <h3>Exhibition</h3>
+                                    <ul>
+                                        <li><a href="">Signs</a></li>
+                                        <li><a href="">Billboards</a></li>
+                                        <li><a href="">Banners</a></li>
+                                        <li><a href="">Correx</a></li>
+                                        <li><a href="">Harp Banners</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 service-list">
+                                    <h3>Portable</h3>
+                                    <ul>
+                                        <li><a href="">Signs</a></li>
+                                        <li><a href="">Billboards</a></li>
+                                        <li><a href="">Banners</a></li>
+                                        <li><a href="">Correx</a></li>
+                                        <li><a href="">Harp Banners</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div id="tab">
+                        <div class="container">
+                            <div class="row">
+                                <h1>Vehicle Wraps &amp; Branding</h1>
+                                <h3>We have a wide range of cost 
+effective quality printing services. Our extensive experiance ensures 
+that we know which substrates will give you the best bang for your buck.</h3>
+                                <div class="col-md-3 service-list">
+                                    <h3>Indoor</h3>
+                                    <ul>
+                                        <li><a href="">Signs</a></li>
+                                        <li><a href="">Billboards</a></li>
+                                        <li><a href="">Banners</a></li>
+                                        <li><a href="">Correx</a></li>
+                                        <li><a href="">Harp Banners</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 service-list">
+                                    <h3>Outdoor</h3>
+                                    <ul>
+                                        <li><a href="">Signs</a></li>
+                                        <li><a href="">Billboards</a></li>
+                                        <li><a href="">Banners</a></li>
+                                        <li><a href="">Correx</a></li>
+                                        <li><a href="">Harp Banners</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 service-list">
+                                    <h3>Exhibition</h3>
+                                    <ul>
+                                        <li><a href="">Signs</a></li>
+                                        <li><a href="">Billboards</a></li>
+                                        <li><a href="">Banners</a></li>
+                                        <li><a href="">Correx</a></li>
+                                        <li><a href="">Harp Banners</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 service-list">
+                                    <h3>Portable</h3>
+                                    <ul>
+                                        <li><a href="">Signs</a></li>
+                                        <li><a href="">Billboards</a></li>
+                                        <li><a href="">Banners</a></li>
+                                        <li><a href="">Correx</a></li>
+                                        <li><a href="">Harp Banners</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div id="tab">
+                        <div class="container">
+                            <div class="row">
+                                <h1>Our Sign services</h1>
+                                <h3>We have a wide range of cost 
+effective quality printing services. Our extensive experiance ensures 
+that we know which substrates will give you the best bang for your buck.</h3>
+                                <div class="col-md-3 service-list">
+                                    <h3>Indoor</h3>
+                                    <ul>
+                                        <li><a href="">Signs</a></li>
+                                        <li><a href="">Billboards</a></li>
+                                        <li><a href="">Banners</a></li>
+                                        <li><a href="">Correx</a></li>
+                                        <li><a href="">Harp Banners</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 service-list">
+                                    <h3>Outdoor</h3>
+                                    <ul>
+                                        <li><a href="">Signs</a></li>
+                                        <li><a href="">Billboards</a></li>
+                                        <li><a href="">Banners</a></li>
+                                        <li><a href="">Correx</a></li>
+                                        <li><a href="">Harp Banners</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 service-list">
+                                    <h3>Exhibition</h3>
+                                    <ul>
+                                        <li><a href="">Signs</a></li>
+                                        <li><a href="">Billboards</a></li>
+                                        <li><a href="">Banners</a></li>
+                                        <li><a href="">Correx</a></li>
+                                        <li><a href="">Harp Banners</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 service-list">
+                                    <h3>Portable</h3>
+                                    <ul>
+                                        <li><a href="">Signs</a></li>
+                                        <li><a href="">Billboards</a></li>
+                                        <li><a href="">Banners</a></li>
+                                        <li><a href="">Correx</a></li>
+                                        <li><a href="">Harp Banners</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div id="tab">
+                        <div class="container">
+                            <div class="row">
+                                <h1>Our Graphic Design services</h1>
+                                <h3>We have a wide range of cost 
+effective quality printing services. Our extensive experiance ensures 
+that we know which substrates will give you the best bang for your buck.</h3>
+                                <div class="col-md-3 service-list">
+                                    <h3>Indoor</h3>
+                                    <ul>
+                                        <li><a href="">Signs</a></li>
+                                        <li><a href="">Billboards</a></li>
+                                        <li><a href="">Banners</a></li>
+                                        <li><a href="">Correx</a></li>
+                                        <li><a href="">Harp Banners</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 service-list">
+                                    <h3>Outdoor</h3>
+                                    <ul>
+                                        <li><a href="">Signs</a></li>
+                                        <li><a href="">Billboards</a></li>
+                                        <li><a href="">Banners</a></li>
+                                        <li><a href="">Correx</a></li>
+                                        <li><a href="">Harp Banners</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 service-list">
+                                    <h3>Exhibition</h3>
+                                    <ul>
+                                        <li><a href="">Signs</a></li>
+                                        <li><a href="">Billboards</a></li>
+                                        <li><a href="">Banners</a></li>
+                                        <li><a href="">Correx</a></li>
+                                        <li><a href="">Harp Banners</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 service-list">
+                                    <h3>Portable</h3>
+                                    <ul>
+                                        <li><a href="">Signs</a></li>
+                                        <li><a href="">Billboards</a></li>
+                                        <li><a href="">Banners</a></li>
+                                        <li><a href="">Correx</a></li>
+                                        <li><a href="">Harp Banners</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="search">
+        <div class="container">
+            <form method="get" id="searchform" action="&lt;?php echo esc_url( home_url( '/' ) ); ?&gt;" role="search">
+                <label for="s" class="assistive-text">Looking for something?</label>
+                <div class="input-group">
+                    <input class="field form-control" name="s" id="s" placeholder="Looking for something?" type="text">
+                    <span class="input-group-btn">
+                        <input class="submit btn btn-primary" name="submit" id="searchsubmit" value="&lt;i class=fa fa-fw fa-search&gt;&lt;i&gt;" type="submit">
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+        
+
+    <div class="recent-work" data-parallax="scroll" data-image-src="img/clouds.jpg">
+    <div class="container">
+        <h2>Hot new projects</h2>
+        <p>We have a braod and diverse client base, big or small, we can help you reach your marketing goals</p>
+    </div>
+        <div class="owl-carousel owl-theme owl-responsive-1000 owl-loaded">
+            
+            
+            
+            
+            
+            
+            
+        <div class="owl-stage-outer" style="padding-left: 0px; padding-right: 0px;"><div class="owl-stage" style="width: 2490.25px; transform: translate3d(0px, 0px, 0px); transition: all 0.25s ease 0s;"><div class="owl-item active" style="width: 355.75px; margin-right: 0px;"><div><img src="Homepage_files/600x600_005.png"></div></div><div class="owl-item active" style="width: 355.75px; margin-right: 0px;"><div><img src="Homepage_files/600x600_006.png"></div></div><div class="owl-item active" style="width: 355.75px; margin-right: 0px;"><div><img src="Homepage_files/600x600_003.png"></div></div><div class="owl-item active" style="width: 355.75px; margin-right: 0px;"><div><img src="Homepage_files/600x600.png"></div></div><div class="owl-item" style="width: 355.75px; margin-right: 0px;"><div><img src="Homepage_files/600x600_002.png"></div></div><div class="owl-item" style="width: 355.75px; margin-right: 0px;"><div><img src="Homepage_files/600x600_004.png"></div></div><div class="owl-item" style="width: 355.75px; margin-right: 0px;"><div><img src="Homepage_files/600x600_007.png"></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style=""><span class="fa fa-chevron-circle-left"></span></div><div class="owl-next" style=""><span class="fa fa-chevron-circle-right"></span></div></div><div style="display: block;" class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div></div>
+    </div>
+
+    <div class="social">
+        <h2>We <i class="fa fa-heart"></i> new friends!</h2>
+        <ul class="list-inline list-social">
+            <li class="social-twitter">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="social-facebook">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li class="social-google-plus">
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+            </li>
+        </ul>
+    </div>
+
+    <footer class="site-footer">        
+        
+
+        <div class="container">
+            <p>© 2016 Star Signs &amp; Customs. All Rights Reserved.</p>
+            <ul class="list-inline">
+                <li>
+                    <a href="#">Privacy</a>
+                </li>
+                <li>
+                    <a href="#">Terms</a>
+                </li>
+                <li>
+                    <a href="#">FAQ</a>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <script src="Homepage_files/jquery.js"></script>
+    <script src="Homepage_files/bootstrap.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="Homepage_files/owl.js"></script>
+    <script src="Homepage_files/plax.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                loop:true,
+                responsiveClass:true,
+                nav:true,
+                responsive:{
+                    0:{
+                        items:1,
+                        nav:true
+                    },
+                    600:{
+                        items:2,
+                        nav:false
+                    },
+                    1000:{
+                        items:4,
+                        nav:true,
+                        loop:false
+                    }
+                },
+                transitionStyle: "fade",
+                navText: [
+                  "<span class='fa fa-chevron-circle-left'></span>",
+                  "<span class='fa fa-chevron-circle-right'></span>"
+                  ],
+            });
+        });
+
+        // Header animate
+        $('.topbar').affix({
+          offset: {
+            top: 100
+          }
+        })
+
+        // Tabs
+        $(document).ready(function(){
+            $("#tabs a").click(function(e){
+                if (!$(this).hasClass("active")) {
+                    var tabNum = $(this).index();
+                    var nthChild = tabNum+1;
+                    $("#tabs a.active").removeClass("active");
+                    $(this).addClass("active");
+                    $("#tab-content #tab.active").removeClass("active");
+                    $("#tab-content #tab:nth-child("+nthChild+")").addClass("active");
+                }
+            });
+        });
+    </script>
+
+
+
+</body></html>

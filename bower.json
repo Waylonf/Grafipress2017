@@ -1,0 +1,29 @@
+{
+  "name": "g16",
+  "description": "Wordpress Theme framework",
+  "main": "index.js",
+  "authors": [
+    "Waylon Fourie"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "wordpress",
+    "theme",
+    "framework",
+    "bootstrap",
+    "underscores"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "font-awesome": "fontawesome#^4.5.0",
+    "bootstrap-sass": "^3.3.6"
+  }
+}

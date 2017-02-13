@@ -1,0 +1,9 @@
+.site-breadcrumbs{
+	background-color: #008C59;
+	a, p{
+		color: $brand-primary;
+	}
+	a:hover{
+		text-decoration: none;
+	}
+}

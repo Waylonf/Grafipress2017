@@ -1,0 +1,14 @@
+#site-navigation.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+    .navbar{
+    	padding:0;   
+	}
+}
+.nav a{
+	text-transform: uppercase;
+	color: #f60;
+	font-size: $font-size-h4!important;
+}
